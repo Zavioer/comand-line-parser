@@ -35,15 +35,15 @@ Just download cmd.py module and add to Your probram by `import` keyword.
 
 **set_name(value)**
 
-`Set up name of the program given as **value** argument with short description.`
+`Set up name of the program given as (value) argument with short description.`
 
 **set_author(value)**
 
-`Set up author of the program given to **value** argument.`
+`Set up author of the program given to (value) argument.`
 
 **set_contact(value)**
 
-`Set up contact e-mail given to `**value**` argument.`
+`Set up contact e-mail given to (value) argument.`
 
 **add_parameter(flag, value)**
 
