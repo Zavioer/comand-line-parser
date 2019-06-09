@@ -5,8 +5,9 @@ from sys import argv
 
 # TODO
 # 1. Napisanie specyfikacji całej "biblioteki"
-# 5. Wrzucić kod na GitHub
-
+# 2. Pomyśleć nad zredukowanie osobnej listy do krótki i długi flag do 
+#    jednej wspólnej
+# 3. 
 class Arguments:
     """ """
     def __init__(self):
@@ -23,9 +24,6 @@ class Arguments:
 
     def display(self):
         return self.arg_list
-
-    def len(self):
-        return len(self.arg_list)
 
     def flags(self):
         pattern = re.compile(r"\-[a-zA-Z0-9]")
@@ -54,7 +52,6 @@ class Arguments:
 
 class Help:
     """ User help display and configuration """
- 
     def __init__(self):
         self.help_list ={'NAME':"",'DESCRIPTION':[],'AUTHOR':[],'CONTACT':[]}
 
@@ -84,5 +81,4 @@ class Help:
         self.help_list['DESCRIPTION'].append(flag + '\t' + value)
         self.help_list['DESCRIPTION'].sort()
     
-
 
