@@ -4,7 +4,7 @@ This program helps handling arguments passing directly to Python 3 script, when 
 Simple command line parser implementation for learning OOP purpose.
 ## Code Example
 ###### Help class
-```
+```python
 help_module = cmd.Help()
 help_module.set_name("ascii calculator - adding up all ASCII values of given string")
 help_module.set_author("Jan Kowalski")
@@ -13,7 +13,7 @@ help_module.add_parameter("--open","take input for given file")
 help_module.add_parameter("-r","display reversed sum of ASCII values")
 ```
 ###### Arguments class
-```
+```python
 arg_ini = cmd.Arguments()
 arg_ini.get()
 flag_list = arg_ini.flags()
