@@ -1,11 +1,29 @@
 # Command line parser
 This program helps handling arguments passing directly to Python 3 script, when calling.  
 ## Motivation
-Simple command line parser implementation for learing OOP in Python purpose.
+Simple command line parser implementation for learning OOP purpose.
 ## Code Example
-
+###### Help class
+```
+help_module = cmd.Help()
+help_module.set_name("ascii calculator - adding up all ASCII values of given string")
+help_module.set_author("Jan Kowalski")
+help_module.set_contact("jkowalski@google.com")
+help_module.add_parameter("--open","take input for given file")
+help_module.add_parameter("-r","display reversed sum of ASCII values")
+```
+###### Arguments class
+```
+arg_ini = cmd.Arguments()
+arg_ini.get()
+flag_list = arg_ini.flags()
+long_flags = arg_ini.long_flags()
+flags_with_input = arg_ini.flags_with_input()
+arg_list = flag_list + long_flags
+flag_with_input = arg_ini.flags_with_input()
+```
 ## Installation
-Just download cmd.py module and add to Your probram by `import` keyword.
+Just download cmd.py module and add to Your script by `import` keyword.
 ## API Reference
 ### Class Arguments
 **get()**
